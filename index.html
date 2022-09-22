@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Barbearia Alura</title>
-		
-	<link rel="stylesheet" href="produtos.css">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
 
-	</head>
-	<header>
-			<div  class= "caixa">
-			<h1> <img id = "logo" src ="logo.jpeg"></h1>
-			
-		<nav>
-		<ul>
-			<li><a href="index.html"> home </a></li>
-			<li><a href="http://google.com">  conceitos </a></li>
-			<li><a href="http://google.com">  colaboração </a> </li>
-			</ul>
-		</nav>
-	</div>
-	</header>
-<main>
-	<ul class= "produtos">
+	<title>Formuário</title>
+	<link rel="stylesheet"  href="formulario.css">
+<form>
 
-		<li><h2> Algoritmo </h2>
-		<img id= "banner" src  = penso1.jpg>
-		<p>  é uma sequência de instruções bem definidas, 
-		<p> executa tarefas </p>
-		<p> usado para resolver problemas específicos</p>
-		</li>
-
-		<li><h2>  decomposição </h2> 
-        <img id= "banner" src  = penso2.jpg>
-		<p> divide os problemas em partes menores  </p>
-		<p> facilitar a resolução </p>
-		<p>  desenvolvimento e gerenciamento </p>
-		</li>
-
-		<li> <h2> abstração de dados </h2>
-		<img id= "banner" src  = penso3.jpg>
-		<p> esconder os detalhes de algo </p>
-		<p> deixar somente o essencial </p>
-		<p> reduzir a complexidade </p>
-		 </li>
-
-	</ul>
+	<div class="pagina">
 
 
-</body>
+<label for="nome">Nome e Sobrenome</label>
+<input type="text"id="nome">
 
-	
+<label for="email">Email</label>
+<input type="text" id="email">
+
+<label for="telefone">Telefone</label>
+<input type="text" id="telefone">
+
+<label for="mensagem">Mensagem</label>
+<textarea cols="70" rows="10" id="mensagem"></textarea>
+
+</div>
+
+<div class="pagina2">
+
+	<p> Como prefere nosso contato </p>
+
+<label for="radio-email">Email
+<input type="radio"  name="contato" value="email" id="radio-email">
+</label>
+
+<label for="radio-telefone">Telefone
+<input type="radio"  name="contato" value="telefone" id="radio-telefone">
+</label>
+
+<label for="radio-Watss"> Watss
+<input type="radio"  name="contato" value="Wtass" id="radio-Watss">
+</label>
+
+
+</div>
+
+<div class="pagina3">
+<p> Qual horário prefere ser atendido? </p>
+<select>
+	<option> Manhã </option>
+	<option> Tarde </option>
+	<option> Noite </option>
+</select>
+
+</div>
+
+
+
+<input type="submit" value="Enviar Formulário">
+
+
+
+</form>
+
+
+
+</head>
+<body>
